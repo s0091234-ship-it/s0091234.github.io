@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Meta Tags -->
+  <title>김에디터 (Kim Editor) — 시니어 콘텐츠 에디터 & UX 라이터</title>
+  <meta name="description" content="복잡한 기술과 비즈니스의 언어를 사람의 온기가 담긴 명료한 문장으로 번역합니다. 8년 차 시니어 콘텐츠 에디터 김에디터의 포트폴리오 및 프로필입니다.">
+  <meta name="keywords" content="김에디터, 콘텐츠 에디터, UX 라이터, 브랜드 스토리텔러, 포트폴리오, 테크 에디터, 브랜드 저널리즘">
+  <meta name="author" content="김에디터 (Kim Editor)">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="김에디터 — 문맥을 짓고, 마음을 움직이며, 지표를 바꾸는 에디터">
+  <meta property="og:description" content="8년 차 시니어 콘텐츠 에디터 & UX 라이터 김에디터의 포트폴리오입니다.">
+  <meta property="og:locale" content="ko_KR">
+  
+  <!-- Google Fonts & Pretendard CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+  
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress-bar" class="scroll-progress"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-logo" id="logo-link">
+        <span class="logo-badge">KIM</span>
+        <span class="logo-text">EDITOR</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="메인 네비게이션">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">소개</a></li>
+          <li><a href="#philosophy" class="nav-link">일하는 원칙</a></li>
+          <li><a href="#skills" class="nav-link">역량</a></li>
+          <li><a href="#experience" class="nav-link">경력</a></li>
+          <li><a href="#case-studies" class="nav-link">케이스 스터디</a></li>
+          <li><a href="#ux-showcase" class="nav-link">UX 라이팅</a></li>
+          <li><a href="#routine" class="nav-link">루틴 & 프로세스</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn-icon theme-btn" aria-label="테마 전환 (다크/라이트 모드)">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">커피챗 요청</a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-toggle" class="btn-icon mobile-toggle" aria-label="모바일 메뉴 열기">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-backdrop" id="mobile-backdrop"></div>
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <span class="drawer-title">메뉴 바로가기</span>
+        <button id="mobile-drawer-close" class="btn-icon" aria-label="메뉴 닫기">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-link">소개 (About)</a></li>
+        <li><a href="#philosophy" class="mobile-link">일하는 원칙 (Philosophy)</a></li>
+        <li><a href="#skills" class="mobile-link">핵심 역량 (Competencies)</a></li>
+        <li><a href="#experience" class="mobile-link">경력 사항 (Experience)</a></li>
+        <li><a href="#case-studies" class="mobile-link">케이스 스터디 (Case Studies)</a></li>
+        <li><a href="#ux-showcase" class="mobile-link">UX 라이팅 쇼케이스 (Before & After)</a></li>
+        <li><a href="#routine" class="mobile-link">루틴 & 6단계 프로세스</a></li>
+        <li><a href="#testimonials" class="mobile-link">동료 추천사 (Testimonials)</a></li>
+        <li><a href="#faq" class="mobile-link">자주 묻는 질문 (FAQ)</a></li>
+        <li><a href="#samples" class="mobile-link">대표 글 모음 (Samples)</a></li>
+        <li><a href="#contact" class="mobile-link mobile-cta-link">연락처 & 커피챗 신청</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- SECTION 1: HERO -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-status-tag">
+          <span class="status-dot"></span>
+          <span>새로운 도전과 협업 기회를 모색하고 있습니다</span>
+        </div>
+
+        <h1 class="hero-title">
+          문맥을 짓고,<br>
+          마음을 움직이며,<br>
+          <span class="highlight-gradient">지표를 바꾸는 에디터.</span>
+        </h1>
+
+        <p class="hero-subtext">
+          좋은 글은 술술 읽히지만, 위대한 글은 다음 행동을 유도합니다.<br class="desktop-br">
+          활자 매체의 엄격한 데스킹 감각과 IT 프로덕트의 데이터 드리븐 사고를 결합해 브랜드의 목소리를 정의합니다.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#case-studies" class="btn btn-primary">프로젝트 성과 보기</a>
+          <button id="copy-email-hero-btn" class="btn btn-secondary copy-email-btn" data-email="editor.kim@example-portfolio.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>이메일 복사하기</span>
+          </button>
+        </div>
+
+        <!-- Key Metrics Cards (Stats Counter) -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number counter" data-target="8">0</span><span class="stat-unit">년</span>
+            </div>
+            <div class="stat-label">총 에디팅 경력</div>
+            <div class="stat-sub">매거진 3년 + 테크 5년</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number counter" data-target="42.8" data-decimals="1">0</span><span class="stat-unit">%</span>
+            </div>
+            <div class="stat-label">뉴스레터 최고 오픈율</div>
+            <div class="stat-sub">업계 평균 대비 +21%p</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-plus">+</span><span class="stat-number counter" data-target="28.4" data-decimals="1">0</span><span class="stat-unit">%</span>
+            </div>
+            <div class="stat-label">온보딩 완료율 상승</div>
+            <div class="stat-sub">UX 마이크로카피 개편 성과</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number counter" data-target="180">0</span><span class="stat-unit">+명</span>
+            </div>
+            <div class="stat-label">심층 인터뷰 진행</div>
+            <div class="stat-sub">창업가, 개발자, 디자이너 등</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT ME -->
+    <section id="about" class="section-padding about-section">
+      <div class="container">
+        <div class="section-badge">ABOUT ME</div>
+        <h2 class="section-title">글을 통해 제품의 가치를 선명하게 빚어냅니다</h2>
+        
+        <div class="about-grid">
+          <div class="about-essay-card card">
+            <p class="lead-text">
+              저는 종이 잡지사에서 문장 하나의 리듬과 쉼표 하나의 무게를 치열하게 고민하는 피처 에디터로 커리어를 시작했습니다. 활자가 인쇄되면 돌이킬 수 없다는 긴장감 속에서 단어의 정확성과 행간의 서사를 훈련받았습니다.
+            </p>
+            <p>
+              이후 테크 스타트업과 스케일업 플랫폼 기업으로 무대를 옮겨, 활자 중심의 에디팅을 <strong>'사용자 경험(UX)과 비즈니스 임팩트를 견인하는 콘텐츠 시스템'</strong>으로 확장해 왔습니다.
+            </p>
+            <p>
+              제가 생각하는 훌륭한 에디터는 단순히 문장을 유려하게 다듬는 교정자가 아닙니다.
+            </p>
+            <ul class="role-definition-list">
+              <li>
+                <span class="icon-bullet">💡</span>
+                <div>
+                  <strong>기획 단계:</strong> 본질적인 문제를 날카롭게 짚어내는 <strong>기획자</strong>
+                </div>
+              </li>
+              <li>
+                <span class="icon-bullet">🔄</span>
+                <div>
+                  <strong>제작 단계:</strong> 복잡한 비즈니스 로직을 직관적인 스토리로 풀어내는 <strong>번역가</strong>
+                </div>
+              </li>
+              <li>
+                <span class="icon-bullet">📈</span>
+                <div>
+                  <strong>배포 이후:</strong> 완독률, 체류 시간, 전환율 데이터를 집요하게 분석해 최적화하는 <strong>그로스 플레이어</strong>
+                </div>
+              </li>
+            </ul>
+            <blockquote class="about-quote">
+              "지금 우리 팀이 고객에게 전하고 싶은 가장 본질적인 메시지는 무엇인가? 그리고 고객은 그것을 어떤 언어로 듣고 싶어 하는가?"
+            </blockquote>
+          </div>
+
+          <div class="about-keywords-column">
+            <div class="keyword-card">
+              <div class="keyword-num">01</div>
+              <h3 class="keyword-title">정확한 밀도 (High Density)</h3>
+              <p class="keyword-desc">
+                미사여구로 채운 긴 글보다 군더더기를 걷어내어 핵심만 남긴 단단한 문장을 추구합니다. 읽는 사람의 시간은 유한하기 때문입니다.
+              </p>
+            </div>
+
+            <div class="keyword-card">
+              <div class="keyword-num">02</div>
+              <h3 class="keyword-title">비즈니스 공감대 (Business Empathy)</h3>
+              <p class="keyword-desc">
+                예술로서의 글쓰기가 아닌 문제를 해결하는 글쓰기를 지향합니다. 기획서의 수식과 디자인의 픽셀, 개발자의 로직 사이에서 언어의 다리를 놓습니다.
+              </p>
+            </div>
+
+            <div class="keyword-card">
+              <div class="keyword-num">03</div>
+              <h3 class="keyword-title">유쾌한 집착 (Pleasant Obsession)</h3>
+              <p class="keyword-desc">
+                버튼 위의 두 글자 '확인'을 '시작하기'로 바꿀 때 유저의 심리가 어떻게 변할지 동료들과 치열하면서도 유쾌하게 토론하는 것을 사랑합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CORE PHILOSOPHY & PRINCIPLES -->
+    <section id="philosophy" class="section-padding philosophy-section surface-bg">
+      <div class="container">
+        <div class="section-badge">WORK PHILOSOPHY</div>
+        <h2 class="section-title">타협하지 않는 4가지 업무 원칙</h2>
+        <p class="section-subtitle">새로운 환경과 프로덕트를 마주할 때 나침반이 되어주는 기준입니다.</p>
+
+        <div class="principles-grid">
+          <div class="principle-card card">
+            <div class="principle-header">
+              <span class="p-num">P.01</span>
+              <h3>독자의 시간을 존중하는 글이 가장 아름답다</h3>
+            </div>
+            <p>
+              첫 세 문장 안에 독자가 얻어갈 이득(Value Proposition)을 선명하게 제시합니다. 복잡한 업계 전문 용어(Jargon) 뒤로 숨지 않으며, 초등학생도 이해할 수 있는 일상어로 기술적 난제를 쉽게 해설할 때 진짜 전문성이 드러납니다.
+            </p>
+            <div class="principle-tag">#명료함 #리듬감 #쉬운언어</div>
+          </div>
+
+          <div class="principle-card card">
+            <div class="principle-header">
+              <span class="p-num">P.02</span>
+              <h3>콘텍스트(Context) 없는 텍스트는 소음에 불과하다</h3>
+            </div>
+            <p>
+              같은 문장이라도 로그인 화면에서 만날 때와 결제 실패 안내 팝업에서 만날 때의 온도는 달라야 합니다. 사용자가 어떤 감정(불안, 기대, 지루함, 조급함)으로 해당 텍스트를 마주하는지 유저 저니(User Journey)를 먼저 해부한 뒤 글을 씁니다.
+            </p>
+            <div class="principle-tag">#유저심리 #상황별온도 #맥락우선</div>
+          </div>
+
+          <div class="principle-card card">
+            <div class="principle-header">
+              <span class="p-num">P.03</span>
+              <h3>글은 홀로 쓰지만, 완성은 동료와 함께 짓는다</h3>
+            </div>
+            <p>
+              에디터는 독방에 갇힌 작가가 아닙니다. 피그마(Figma) 캔버스 위에서 디자이너와 컴포넌트 여백을 논하고, 스프린트 미팅에서 PM과 KPI를 공유합니다. 동료의 피드백을 '내 글에 대한 비판'이 아니라 '프로덕트를 날카롭게 벼리는 망치질'로 환영합니다.
+            </p>
+            <div class="principle-tag">#원팀스피릿 #피그마페어링 #열린피드백</div>
+          </div>
+
+          <div class="principle-card card">
+            <div class="principle-header">
+              <span class="p-num">P.04</span>
+              <h3>데이터는 나침반이며, 감각은 돛이다</h3>
+            </div>
+            <p>
+              정량 데이터(CTR, 완독률, 스크롤 뎁스, 이탈 지점)를 통해 가설을 검증합니다. 하지만 데이터만으로는 고객의 심장을 울리는 한 문장을 발견할 수 없습니다. 인간에 대한 집요한 관찰과 인문학적 직관을 결합해 브랜드만의 고유한 색채를 지켜냅니다.
+            </p>
+            <div class="principle-tag">#정량과정성 #가설검증 #오리지널리티</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CORE COMPETENCIES -->
+    <section id="skills" class="section-padding skills-section">
+      <div class="container">
+        <div class="section-badge">CORE COMPETENCIES</div>
+        <h2 class="section-title">스킬셋 & 전문 영역</h2>
+        
+        <div class="skills-grid">
+          <div class="skill-card card">
+            <div class="skill-icon">📰</div>
+            <h3>브랜드 저널리즘 & 기획 출판</h3>
+            <p>기업 공식 미디어, 오피니언 아티클, 테크 블로그 기획 및 데스킹. 창업자와 C-Level의 철학을 선명하게 아카이빙합니다.</p>
+            <ul class="skill-detail-list">
+              <li>테크 블로그 & 브랜드 미디어 리딩</li>
+              <li>심층 인터뷰 및 대담 기획 (180+회)</li>
+              <li>화이트페이퍼 & 트렌드 리포트 발간</li>
+            </ul>
+          </div>
+
+          <div class="skill-card card">
+            <div class="skill-icon">📱</div>
+            <h3>UX 라이팅 & 프로덕트 카피</h3>
+            <p>온보딩, 결제, 에러 알림 등 마이크로카피 최적화를 통해 이탈률을 낮추고 핵심 전환율(Conversion)을 끌어올립니다.</p>
+            <ul class="skill-detail-list">
+              <li>온보딩/회원가입 퍼널 마이크로카피 최적화</li>
+              <li>피그마 기반 디자인 시스템 텍스트 토큰 규격화</li>
+              <li>A/B 카피 테스트 설계 및 전환율 검증</li>
+            </ul>
+          </div>
+
+          <div class="skill-card card">
+            <div class="skill-icon">🏛️</div>
+            <h3>브랜드 보이스 아키텍처</h3>
+            <p>조직이 커져도 브랜드의 말씨가 흐트러지지 않도록 전사 Voice & Tone Matrix 가이드라인을 제정하고 교육합니다.</p>
+            <ul class="skill-detail-list">
+              <li>전사 톤앤매너 매트릭스(Voice Matrix) 수립</li>
+              <li>상황별 Do & Don't 예시집 핸드북 제작</li>
+              <li>크로스 펑셔널 카피 리뷰 가이드 배포</li>
+            </ul>
+          </div>
+
+          <div class="skill-card card">
+            <div class="skill-icon">💌</div>
+            <h3>CRM & 오디언스 리텐션</h3>
+            <p>스팸이 아닌 매주 기다려지는 읽을거리를 만듭니다. 오픈율 42.8%를 기록한 오리지널 뉴스레터 기획 및 SEO 최적화 역량.</p>
+            <ul class="skill-detail-list">
+              <li>주간/월간 뉴스레터 오리지널 콘텐츠 큐레이션</li>
+              <li>이메일 제목 훅(Hook) 설계 및 세그먼트 발송</li>
+              <li>검색 엔진 유기적 유입을 이끄는 SEO 전략</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tool Stack Badges -->
+        <div class="tools-wrapper card">
+          <h3 class="tools-title">활용 툴 및 작업 환경</h3>
+          <div class="tools-categories">
+            <div class="tool-group">
+              <span class="tool-cat-name">문서화 & 지식 관리:</span>
+              <div class="tool-tags">
+                <span class="tool-tag">Notion</span>
+                <span class="tool-tag">Confluence</span>
+                <span class="tool-tag">Google Workspace</span>
+                <span class="tool-tag">Coda</span>
+              </div>
+            </div>
+            <div class="tool-group">
+              <span class="tool-cat-name">디자인 & 프로덕트 협업:</span>
+              <div class="tool-tags">
+                <span class="tool-tag">Figma</span>
+                <span class="tool-tag">FigJam</span>
+                <span class="tool-tag">Miro</span>
+                <span class="tool-tag">Ditto</span>
+              </div>
+            </div>
+            <div class="tool-group">
+              <span class="tool-cat-name">데이터 분석 & CRM:</span>
+              <div class="tool-tags">
+                <span class="tool-tag">Google Analytics 4</span>
+                <span class="tool-tag">Amplitude</span>
+                <span class="tool-tag">Hotjar</span>
+                <span class="tool-tag">Stibee</span>
+                <span class="tool-tag">Mailchimp</span>
+              </div>
+            </div>
+            <div class="tool-group">
+              <span class="tool-cat-name">AI 코파일럿:</span>
+              <div class="tool-tags">
+                <span class="tool-tag">Claude</span>
+                <span class="tool-tag">ChatGPT</span>
+                <span class="tool-tag">Perplexity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: WORK EXPERIENCE -->
+    <section id="experience" class="section-padding experience-section surface-bg">
+      <div class="container">
+        <div class="section-badge">CAREER JOURNEY</div>
+        <h2 class="section-title">8년간 걸어온 여정</h2>
+        <p class="section-subtitle">활자의 무게를 배우던 매거진에서, 비즈니스 성장을 견인하는 테크 기업까지.</p>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="company-name">(주) 넥스트플랫폼 (NextPlatform Corp.)</h3>
+                  <div class="job-role">Lead Brand Content Editor / UX Writer</div>
+                </div>
+                <span class="timeline-period">2022.03 ~ 현재</span>
+              </div>
+              <p class="timeline-summary">
+                시리즈 C 테크 기업에서 B2B/B2C 통합 플랫폼의 브랜드 미디어팀 리드 및 코어 프로덕트 UX 라이팅 총괄.
+              </p>
+              <ul class="timeline-achievements">
+                <li>공식 브랜드 미디어 <strong>'Next Insights'</strong> 신규 론칭 및 월간 순방문자(MAU) 35만 명 달성</li>
+                <li>온보딩 프로세스 전면 카피 개편으로 회원가입 완료율 <strong>+28.4% 개선</strong> (이탈률 34% 감소)</li>
+                <li>전사 350여 명을 위한 <strong>'Next Tone & Voice Guidebook v1.0 / v2.0'</strong> 편찬</li>
+                <li>테크 블로그 리뉴얼 및 엔지니어 인터뷰 24편 연재를 통해 개발자 채용 지원율 전년 대비 62% 증가 기여</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="company-name">(주) 스타일버스 (Styleverse Inc.)</h3>
+                  <div class="job-role">Content Strategist & Senior Editor</div>
+                </div>
+                <span class="timeline-period">2019.08 ~ 2022.02</span>
+              </div>
+              <p class="timeline-summary">
+                패션 & 라이프스타일 버티컬 커머스 플랫폼 내 에디토리얼 커머스 콘텐츠 기획 및 뉴스레터 총괄.
+              </p>
+              <ul class="timeline-achievements">
+                <li>주간 트렌드 큐레이션 뉴스레터 '스타일위크' 0명에서 <strong>82,000 구독자</strong> 성장 주도</li>
+                <li>평균 뉴스레터 오픈율 <strong>42.8%</strong>, 링크 클릭률(CTR) 18.2% 기록</li>
+                <li>입점 브랜드 디렉터 심층 인터뷰 기획을 통한 프리미엄 라인 거래액(GMV) 기여도 24% 달성</li>
+                <li>앱 푸시 알림 카피 A/B 테스트 프레임워크 도입으로 오픈율 평균 1.8배 개선</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="company-name">월간 &lt;어반노트&gt; (Urban Note Magazine)</h3>
+                  <div class="job-role">Feature & Culture Editor</div>
+                </div>
+                <span class="timeline-period">2017.02 ~ 2019.07</span>
+              </div>
+              <p class="timeline-summary">
+                도시 문화, 건축, 스몰 브랜드, 일하는 사람들을 취재하는 라이프스타일 디자인 매거진 피처 에디터.
+              </p>
+              <ul class="timeline-achievements">
+                <li>매월 16~24페이지 메인 피처 기사 취재, 인터뷰, 원고 집필 및 사진 디렉팅</li>
+                <li>80여 회 이상의 각계 전문가 심층 인터뷰 및 대담 진행</li>
+                <li>특별호 '지속가능한 로컬 비즈니스' 기획 및 <strong>전량 매진(12,000부)</strong> 기록</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: SELECTED CASE STUDIES -->
+    <section id="case-studies" class="section-padding case-studies-section">
+      <div class="container">
+        <div class="section-badge">DEEP DIVES</div>
+        <h2 class="section-title">대표 프로젝트 케이스 스터디</h2>
+        <p class="section-subtitle">문제 정의부터 솔루션, 비즈니스 성과까지의 구체적 기록입니다.</p>
+
+        <div class="cases-grid">
+          <!-- Case 1 -->
+          <article class="case-card card">
+            <div class="case-tag">핀테크 UX 라이팅</div>
+            <h3 class="case-title">자산관리 서비스 온보딩 UX 전면 개편</h3>
+            <p class="case-problem">
+              <strong>문제:</strong> 신규 유저의 첫 3일 차 이탈률이 48%에 달함. 마이데이터 연동 및 계좌 인증 과정에서 등장하는 금융 규제 용어와 보안 문구가 불안과 피로감을 유발.
+            </p>
+            <div class="case-solution">
+              <strong>솔루션:</strong>
+              <ul>
+                <li>'공공 마이데이터 전송요구권' 등 법률적 표현을 '흩어진 내 자산을 안전하게 한곳에 모으기'로 변경</li>
+                <li>단계별 로딩 화면에 소요 시간 안내(약 3초) 및 실시간 피드백 문구 삽입</li>
+                <li>'오류코드 402' 대신 구체적 원인과 대안(점검 시간 안내 등) 제시</li>
+              </ul>
+            </div>
+            <div class="case-results">
+              <div class="res-item">
+                <span class="res-num">+28.4%</span>
+                <span class="res-label">온보딩 완료율</span>
+              </div>
+              <div class="res-item">
+                <span class="res-num">-41%</span>
+                <span class="res-label">인증 CS 문의</span>
+              </div>
+              <div class="res-item">
+                <span class="res-num">4.7 / 5.0</span>
+                <span class="res-label">사용성 만족도(CSAT)</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 2 -->
+          <article class="case-card card">
+            <div class="case-tag">오디언스 CRM</div>
+            <h3 class="case-title">0명에서 8만 명까지, 팬덤을 만든 뉴스레터</h3>
+            <p class="case-problem">
+              <strong>문제:</strong> 단순 할인/프로모션형 메일의 수신거부율 0.8%, 오픈율 11% 정체. 고객에게 광고가 아닌 매주 기다려지는 읽을거리 제공 필요.
+            </p>
+            <div class="case-solution">
+              <strong>솔루션:</strong>
+              <ul>
+                <li>'호기심 많은 에디터 K' 페르소나 설정 및 1:1 대화형 에세이 포맷 도입</li>
+                <li>생각거리를 던지는 질문형 오프닝 훅(Hook) 설계</li>
+                <li>뉴스레터 하단 '답장하기' 버튼을 통한 능동적 피드백 루프 안착</li>
+              </ul>
+            </div>
+            <div class="case-results">
+              <div class="res-item">
+                <span class="res-num">82,000명</span>
+                <span class="res-label">구독자 (오가닉 바이럴)</span>
+              </div>
+              <div class="res-item">
+                <span class="res-num">42.8%</span>
+                <span class="res-label">평균 오픈율</span>
+              </div>
+              <div class="res-item">
+                <span class="res-num">3.4배</span>
+                <span class="res-label">구매 전환율 상승</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 3 -->
+          <article class="case-card card">
+            <div class="case-tag">브랜드 거버넌스</div>
+            <h3 class="case-title">전사 브랜드 톤앤매너 보이스 매트릭스 수립</h3>
+            <p class="case-problem">
+              <strong>문제:</strong> 조직이 200명 규모로 급성장하며 마케팅, 앱 UI, 고객센터(CS) 말투가 분열되어 브랜드 일관성이 훼손됨.
+            </p>
+            <div class="case-solution">
+              <strong>솔루션:</strong>
+              <ul>
+                <li>3대 핵심 보이스 원칙 (따뜻하지만 과장 없는, 똑똑하지만 겸손한, 신속하지만 침착한)</li>
+                <li>8개 시나리오별 Do & Don't 예시집 집필</li>
+                <li>전사 기획자/디자이너 대상 인터랙티브 워크숍 및 노션 가이드 배포</li>
+              </ul>
+            </div>
+            <div class="case-results">
+              <div class="res-item">
+                <span class="res-num">-50%</span>
+                <span class="res-label">카피 검수 병목 시간</span>
+              </div>
+              <div class="res-item">
+                <span class="res-num">84%</span>
+                <span class="res-label">브랜드 신뢰 인식률</span>
+              </div>
+              <div class="res-item">
+                <span class="res-num">120+ p</span>
+                <span class="res-label">공식 가이드북 편찬</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: UX WRITING SHOWCASE (BEFORE & AFTER) -->
+    <section id="ux-showcase" class="section-padding ux-showcase-section surface-bg">
+      <div class="container">
+        <div class="section-badge">MICROCOPY LAB</div>
+        <h2 class="section-title">UX 라이팅 인터랙티브 쇼케이스</h2>
+        <p class="section-subtitle">작은 단어 하나가 고객의 불안을 안심으로 바꾸는 Before & After 비교입니다.</p>
+
+        <div class="showcase-tabs-container card">
+          <!-- Tabs Navigation -->
+          <div class="tabs-nav" role="tablist">
+            <button class="tab-btn active" role="tab" aria-selected="true" data-tab="tab-1">회원 탈퇴 모달</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-2">결제 승인 대기</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-3">빈 화면 (Empty State)</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-4">오류 안내 팝업</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-5">마케팅 수신 동의</button>
+          </div>
+
+          <!-- Tab Contents -->
+          <div class="tab-contents">
+            <!-- Tab 1 -->
+            <div class="tab-panel active" id="tab-1" role="tabpanel">
+              <div class="compare-grid">
+                <div class="compare-card before">
+                  <div class="compare-badge badge-before">BEFORE (기존 문구)</div>
+                  <div class="mockup-ui">
+                    <p class="mockup-text warning-text">정말 탈퇴하시겠습니까? 모든 혜택이 즉시 소멸됩니다.</p>
+                    <div class="mockup-buttons">
+                      <span class="btn-dummy">취소</span>
+                      <span class="btn-dummy danger">탈퇴하기</span>
+                    </div>
+                  </div>
+                  <p class="compare-analysis">사용자에게 공포감을 조성하는 위협적인 어조. 구체적인 손실 정보를 주지 못함.</p>
+                </div>
+
+                <div class="compare-card after">
+                  <div class="compare-badge badge-after">AFTER (개선 문구)</div>
+                  <div class="mockup-ui">
+                    <p class="mockup-text friendly-text">지금까지 모은 <strong>15,200P</strong>가 사라져요. 잠시 알림만 꺼둘까요?</p>
+                    <div class="mockup-buttons">
+                      <span class="btn-dummy primary">알림만 끄기</span>
+                      <span class="btn-dummy muted">탈퇴 계속하기</span>
+                    </div>
+                  </div>
+                  <p class="compare-analysis"><strong>성과: 탈퇴 방어율 +19% 달성.</strong> 구체적 혜택 수치를 인지시키고 '휴면(알림 끄기)'이라는 부드러운 대안을 제시.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="tab-panel" id="tab-2" role="tabpanel">
+              <div class="compare-grid">
+                <div class="compare-card before">
+                  <div class="compare-badge badge-before">BEFORE (기존 문구)</div>
+                  <div class="mockup-ui">
+                    <p class="mockup-text warning-text">결제 처리 중입니다. 새로고침을 누르지 마십시오.</p>
+                    <div class="spinner-dummy"></div>
+                  </div>
+                  <p class="compare-analysis">명령형 금지어로 사용자의 조급함과 두려움을 자극하며 결제 취소 유발 위험.</p>
+                </div>
+
+                <div class="compare-card after">
+                  <div class="compare-badge badge-after">AFTER (개선 문구)</div>
+                  <div class="mockup-ui">
+                    <p class="mockup-text friendly-text">안전하게 결제를 진행하고 있어요. 창을 닫지 말고 <strong>3초만 기다려주세요.</strong></p>
+                    <div class="progress-dummy"></div>
+                  </div>
+                  <p class="compare-analysis"><strong>성과: 대기 중 이탈률 22% 감소.</strong> 심리적 안전감 부여 및 구체적인 소요 시간(3초)을 명시하여 안심 제공.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="tab-panel" id="tab-3" role="tabpanel">
+              <div class="compare-grid">
+                <div class="compare-card before">
+                  <div class="compare-badge badge-before">BEFORE (기존 문구)</div>
+                  <div class="mockup-ui">
+                    <p class="mockup-text empty-text">등록된 즐겨찾기 내역이 없습니다.</p>
+                  </div>
+                  <p class="compare-analysis">차갑고 부정적인 결핍 상태만 안내하여 유저가 다음에 무엇을 해야 할지 길을 잃음.</p>
+                </div>
+
+                <div class="compare-card after">
+                  <div class="compare-badge badge-after">AFTER (개선 문구)</div>
+                  <div class="mockup-ui">
+                    <p class="mockup-text friendly-text">마음에 드는 아티클의 <strong>하트(♡)</strong>를 눌러보세요. 언제든 다시 꺼내볼 수 있어요.</p>
+                    <span class="btn-dummy primary-inline">추천 아티클 둘러보기</span>
+                  </div>
+                  <p class="compare-analysis"><strong>성과: 즐겨찾기 기능 활성화율 +31% 증가.</strong> 튜토리얼 성격의 따뜻한 안내와 즉각적인 탐색 CTA 버튼 제공.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 4 -->
+            <div class="tab-panel" id="tab-4" role="tabpanel">
+              <div class="compare-grid">
+                <div class="compare-card before">
+                  <div class="compare-badge badge-before">BEFORE (기존 문구)</div>
+                  <div class="mockup-ui">
+                    <p class="mockup-text warning-text">일시적 네트워크 장애 (Code: 503). 재시도 요망</p>
+                  </div>
+                  <p class="compare-analysis">기계적인 개발자용 에러 코드. 사용자가 자신의 문제인지 서버 문제인지 알 수 없음.</p>
+                </div>
+
+                <div class="compare-card after">
+                  <div class="compare-badge badge-after">AFTER (개선 문구)</div>
+                  <div class="mockup-ui">
+                    <p class="mockup-text friendly-text">일시적으로 인터넷 연결이 불안정해요. 와이파이를 확인하고 다시 눌러주세요.</p>
+                    <span class="btn-dummy primary-inline">다시 시도하기</span>
+                  </div>
+                  <p class="compare-analysis"><strong>성과: 에러 발생 후 앱 이탈률 35% 감소.</strong> 사용자가 즉시 조치할 수 있는 현실적인 행동 지침 제시.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 5 -->
+            <div class="tab-panel" id="tab-5" role="tabpanel">
+              <div class="compare-grid">
+                <div class="compare-card before">
+                  <div class="compare-badge badge-before">BEFORE (기존 문구)</div>
+                  <div class="mockup-ui">
+                    <p class="mockup-text">[선택] 이벤트 및 혜택 정보 수신에 동의합니다.</p>
+                  </div>
+                  <p class="compare-analysis">건조하고 딱딱한 법률 문구. '스팸을 받게 될 것 같다'는 거부감 유발.</p>
+                </div>
+
+                <div class="compare-card after">
+                  <div class="compare-badge badge-after">AFTER (개선 문구)</div>
+                  <div class="mockup-ui">
+                    <p class="mockup-text friendly-text">매주 목요일 아침, 에디터가 엄선한 <strong>할인 소식과 꿀팁</strong>을 놓치지 마세요. [선택]</p>
+                  </div>
+                  <p class="compare-analysis"><strong>성과: 마케팅 수신 동의율 +24%p 상승.</strong> 정보 수신을 통해 유저가 얻게 될 가치(Value)와 발송 주기를 명확히 전달.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand Voice 4-Quadrant System Box -->
+        <div class="voice-system-box card mt-6">
+          <h3 class="sub-heading">Brand Voice 4분면 매트릭스 원칙</h3>
+          <p class="voice-desc">모든 카피는 상황에 따라 <strong>'따뜻함 vs 명확함', '간결함 vs 풍부함'</strong>의 균형점을 정교하게 조율합니다.</p>
+          <div class="voice-matrix-grid">
+            <div class="matrix-quadrant">
+              <span class="q-label">Q1. 일상 안내 & 웰컴</span>
+              <p class="q-copy">"환영해요, OO님!"</p>
+              <span class="q-tone">따뜻함 + 간결함</span>
+            </div>
+            <div class="matrix-quadrant">
+              <span class="q-label">Q2. 성취 축하 & 서프라이즈</span>
+              <p class="q-copy">"오늘의 목표를 완벽하게 끝냈어요!"</p>
+              <span class="q-tone">따뜻함 + 풍부함</span>
+            </div>
+            <div class="matrix-quadrant">
+              <span class="q-label">Q3. 보안 인증 & 시스템 경고</span>
+              <p class="q-copy">"인증번호 6자리를 입력해주세요"</p>
+              <span class="q-tone">명확함 + 간결함</span>
+            </div>
+            <div class="matrix-quadrant">
+              <span class="q-label">Q4. 장애 사과 & 보상 안내</span>
+              <p class="q-copy">"불편을 드려 죄송합니다. 복구 중이에요"</p>
+              <span class="q-tone">명확함 + 풍부함</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: EDITORIAL ROUTINE & PROCESS -->
+    <section id="routine" class="section-padding routine-section">
+      <div class="container">
+        <div class="section-badge">HOW I WORK</div>
+        <h2 class="section-title">일주일의 루틴 & 6단계 프로세스</h2>
+        <p class="section-subtitle">예측 가능하고 안정적인 협업을 위해 확립한 작업 리듬입니다.</p>
+
+        <!-- 6-Step Process Flow -->
+        <div class="process-flow-container card">
+          <h3 class="sub-heading">아이디어에서 배포까지의 6단계 워크플로우</h3>
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-badge">STEP 1</div>
+              <h4>발제 & 가설 설정</h4>
+              <p>독자가 얻어갈 효용과 검증할 비즈니스 가설을 정의합니다.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-badge">STEP 2</div>
+              <h4>맥락 리서치</h4>
+              <p>개발자/디자이너 인터뷰와 데이터 분석으로 1차 자료를 수집합니다.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-badge">STEP 3</div>
+              <h4>프레이밍 & 구조화</h4>
+              <p>단 하나의 핵심 메시지를 정하고 3막 구조로 뼈대를 세웁니다.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-badge">STEP 4</div>
+              <h4>초안 & 피그마 페어링</h4>
+              <p>UI 컴포넌트 여백을 고려하며 디자이너와 실시간으로 문장을 배치합니다.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-badge">STEP 5</div>
+              <h4>데스킹 & 팩트체크</h4>
+              <p>10대 자가 체크리스트를 기반으로 단어의 오남용과 데이터를 검증합니다.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-badge">STEP 6</div>
+              <h4>배포 & 데이터 회고</h4>
+              <p>완독률, 체류 시간, 전환율을 측정하고 다음 스프린트에 반영합니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weekly Routine & 30-60-90 Days Roadmap -->
+        <div class="routine-roadmap-grid mt-6">
+          <div class="routine-card card">
+            <h3 class="sub-heading">일주일의 협업 루틴</h3>
+            <ul class="routine-list">
+              <li>
+                <span class="day-tag">월요일</span>
+                <div><strong>정렬 & 우선순위:</strong> 전주 데이터 리뷰, 스프린트 참여, 티켓 정리</div>
+              </li>
+              <li>
+                <span class="day-tag">화~수</span>
+                <div><strong>딥 워크 & 프로덕션:</strong> 심층 아티클 집필, 프로덕트 카피 작성, 대면 인터뷰</div>
+              </li>
+              <li>
+                <span class="day-tag">목요일</span>
+                <div><strong>크로스 펑셔널 리뷰:</strong> 디자이너/PM과 피그마 페어링, A/B 테스트 회고</div>
+              </li>
+              <li>
+                <span class="day-tag">금요일</span>
+                <div><strong>인풋 & 브레인스토밍:</strong> 한 주 성과 아카이빙, 글로벌 레퍼런스 채널 공유</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="roadmap-card card">
+            <h3 class="sub-heading">새 팀 합류 시 30-60-90일 로드맵</h3>
+            <div class="roadmap-steps">
+              <div class="r-step">
+                <span class="r-badge">Day 1~30</span>
+                <div>
+                  <strong>경청 & 용어 사전 구축</strong>
+                  <p>사내 위키 탐독, 동료 1:1 커피챗, 시급한 불친절 문구 개선 Quick Win 달성</p>
+                </div>
+              </div>
+              <div class="r-step">
+                <span class="r-badge">Day 31~60</span>
+                <div>
+                  <strong>시스템 구축 & 임팩트 창출</strong>
+                  <p>유저 저니 전수 텍스트 오딧, 톤앤매너 체크리스트 배포, 플래그십 아티클 론칭</p>
+                </div>
+              </div>
+              <div class="r-step">
+                <span class="r-badge">Day 61~90</span>
+                <div>
+                  <strong>스케일업 & 자율성 확보</strong>
+                  <p>A/B 테스트 결과 전사 공유, 비에디터용 작성 템플릿 안착, 분기 OKR 로드맵 리드</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: TESTIMONIALS -->
+    <section id="testimonials" class="section-padding testimonials-section surface-bg">
+      <div class="container">
+        <div class="section-badge">TESTIMONIALS</div>
+        <h2 class="section-title">함께 일했던 동료들의 목소리</h2>
+        <p class="section-subtitle">프로덕트 매니저, 디자이너, 마케터가 기억하는 김에디터입니다.</p>
+
+        <div class="testimonials-grid">
+          <div class="testi-card card">
+            <p class="testi-quote">
+              "글은 기획과 디자인이 끝난 뒤 마지막에 얹는 '포장지'인 줄 알았습니다. 하지만 김에디터님은 첫 와이어프레임 단계부터 참여해 프로덕트의 뼈대를 잡아주셨어요. 덕분에 복잡했던 결제 단계가 놀라울 만큼 단순해졌습니다."
+            </p>
+            <div class="testi-author">
+              <div class="author-avatar">박</div>
+              <div>
+                <div class="author-name">박성준</div>
+                <div class="author-role">Product Owner / PM</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card card">
+            <p class="testi-quote">
+              "디자이너 입장에서 가장 든든한 파트너입니다. 버튼 크기가 줄어들면 거기에 딱 맞는 4글자를 가져오시고, 여백이 남으면 그 공간을 빛내는 감각적인 마이크로카피를 건네주십니다. 디자인 시스템을 누구보다 깊이 이해하는 에디터입니다."
+            </p>
+            <div class="testi-author">
+              <div class="author-avatar">이</div>
+              <div>
+                <div class="author-name">이소영</div>
+                <div class="author-role">Senior Product Designer</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card card">
+            <p class="testi-quote">
+              "김에디터님의 글에는 특유의 리듬감이 있습니다. 아무리 지루하고 기술적인 주제도 그분의 손을 거치면 흥미진진한 탐험 이야기로 바뀝니다. 뉴스레터 오픈율 40%는 운이 아니라 고객의 시선을 끝까지 붙잡는 디테일의 결과였습니다."
+            </p>
+            <div class="testi-author">
+              <div class="author-avatar">정</div>
+              <div>
+                <div class="author-name">정태현</div>
+                <div class="author-role">Growth Marketing Lead</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card card">
+            <p class="testi-quote">
+              "피드백을 드릴 때마다 늘 열린 마음으로 경청해 주시고, 언제나 기대 이상의 대안을 들고 오셔서 팀 전체의 사기를 북돋아 주십니다. 조직 문화 차원에서도 커뮤니케이션의 밀도를 한 단계 끌어올려 주신 분입니다."
+            </p>
+            <div class="testi-author">
+              <div class="author-avatar">최</div>
+              <div>
+                <div class="author-name">최서윤</div>
+                <div class="author-role">VP of Brand & Strategy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: FAQ -->
+    <section id="faq" class="section-padding faq-section">
+      <div class="container">
+        <div class="section-badge">FAQ</div>
+        <h2 class="section-title">자주 묻는 질문 8문 8답</h2>
+        <p class="section-subtitle">새로운 회사에서 저에 대해 가장 궁금해하셨던 질문들을 정리했습니다.</p>
+
+        <div class="faq-accordion" id="faq-accordion">
+          <!-- Q1 -->
+          <div class="accordion-item card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Q1. 생소한 기술 분야(딥테크, AI, B2B SaaS)도 빠르게 적응할 수 있나요?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>네, 그것이 제가 지난 8년간 에디터로서 갈고닦은 가장 강력한 무기입니다. 에디터의 본질은 '이미 다 아는 전문가'가 아니라, '누구보다 집요하게 질문하고 빠르게 학습하여 일반인의 언어로 재구성하는 탐구자'입니다. 낯선 산업군일수록 개발 문서, 고객 상담 녹취록, 해외 레퍼런스를 며칠 밤낮으로 파고들어 팀 내 누구보다 명료한 요약본을 만들어낼 자신이 있습니다.</p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="accordion-item card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Q2. UX 라이팅과 브랜드 마케팅 카피의 성격 차이를 어떻게 조율하나요?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>목적에 따른 '스위칭'의 문제입니다. <strong>UX 라이팅</strong>은 공기나 물과 같아야 합니다. 사용자가 글을 읽고 있다는 사실조차 인지하지 못할 만큼 직관적이고 매끄럽게 다음 탭으로 안내하는 '무마찰(Frictionless)'이 최우선입니다. 반면 <strong>브랜드 마케팅</strong>은 기억에 남는 하나의 인상(Impression)과 감정적 파동을 남겨야 합니다. 목적에 따라 모자를 바꾸어 쓰며 조율합니다.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="accordion-item card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Q3. 일정(Deadline)과 퀄리티(Quality)가 충돌할 때는 어떻게 대처하나요?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>80% 완성도의 빠른 프로토타입으로 우선 검증하고 점진적으로 보완합니다. 디지털 프로덕트와 웹 콘텐츠는 배포 후 실시간 최적화가 가능합니다. 런칭 일정을 지키는 것은 신뢰의 기본이므로, 1차 배포 가능한 최소 기능 텍스트(MVP Copy)를 기한 내에 내보낸 뒤 유저 데이터와 피드백을 수집하며 완성도를 100%로 끌어올립니다.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="accordion-item card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Q4. 생성형 AI 도구(LLM)는 워크플로우에 어떻게 활용하시나요?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>AI는 에디터의 강력한 코파일럿(Copilot)입니다. 리서치 자료 요약, 다양한 변형 카피 아이데이션, 오탈자 교정 등에 적극적으로 AI를 활용하여 작업 시간을 40% 이상 단축합니다. 하지만 "우리 브랜드다운 오리지널리티가 무엇인가?", "유저의 미묘한 감정을 어떻게 어루만질 것인가?"를 판단하는 감각과 최종 팩트체크는 인간 에디터의 깊은 사유를 통해 완성합니다.</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="accordion-item card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Q5. 디자인 시스템(Design System)에 UX 라이팅 토큰을 어떻게 연동하나요?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>버튼, 알림창, 툴팁 등 각 컴포넌트 라이브러리마다 글자 수 제한(Character Limits), 대소문자 규칙, 문장 부호 규칙을 디자인 토큰과 함께 명시합니다. 피그마 플러그인(Ditto 등)을 활용해 디자인 파일 내 텍스트가 단일 진실 공급원(Single Source of Truth)으로 유지되도록 파이프라인을 구축한 경험이 있습니다.</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="accordion-item card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Q6. B2B와 B2C 콘텐츠 기획의 가장 큰 차이점은 무엇인가요?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>B2C는 '공감과 즉각적인 감정적 매력'이 결정을 이끌어내는 반면, B2B는 '논리적 효용과 결재권자를 설득할 정량적 ROI'가 핵심입니다. 따라서 B2B 글쓰기에서는 팀의 업무 시간 절감 지표, 도입 비용 대비 회수 기간, 보안 인증 준수 여부 등 명확한 증거 기반의 텍스트 구조화를 최우선으로 둡니다.</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="accordion-item card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Q7. 인터뷰이의 진솔한 속마음을 끌어내는 김에디터만의 비결은?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>인터뷰 전 최소 3시간 이상 인터뷰이의 과거 발언과 산출물을 정독하고 '그 누구도 아직 묻지 않았던 질문' 3가지를 준비합니다. 인터뷰 시작 첫 10분은 녹음기를 켜지 않고 가벼운 일상 대화로 심리적 안전감을 형성하며, "완벽한 정답이 아니라 실패했던 순간의 진짜 고민을 듣고 싶다"는 진정성을 전달합니다.</p>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="accordion-item card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Q8. 원격/하이브리드 근무 환경에서의 소통은 어떻게 진행하나요?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>비동기 커뮤니케이션(Asynchronous Communication)에 매우 능숙합니다. 말로 하는 대화보다 문서화된 텍스트가 더 많은 오해를 낳을 수 있음을 알기에 업무 배경, 요구사항, 마감 기한, 참고 링크를 일목요연하게 템플릿화하여 슬랙과 노션에 남깁니다. 중요한 의사결정은 항상 기록으로 남겨 히스토리를 즉시 파악할 수 있게 합니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: SAMPLES & BOOKSHELF -->
+    <section id="samples" class="section-padding samples-section surface-bg">
+      <div class="container">
+        <div class="section-badge">READING ROOM</div>
+        <h2 class="section-title">대표 글 모음 & 에디터의 서재</h2>
+        <p class="section-subtitle">글쓰기 스타일을 엿볼 수 있는 아티클 발췌문과 영감을 준 책들입니다.</p>
+
+        <div class="reading-grid">
+          <!-- Left: Article Samples -->
+          <div class="samples-column">
+            <h3 class="sub-heading">Featured Articles & Case Notes</h3>
+            <div class="sample-cards">
+              <article class="sample-card card">
+                <span class="sample-tag">Brand Essay · 조회수 8.4만</span>
+                <h4>기술이 고도화될수록 우리는 왜 더 아날로그적인 언어를 갈망하는가</h4>
+                <p class="sample-excerpt">
+                  "인공지능이 코드를 짜고 이미지를 만드는 시대에, 브랜드가 지켜야 할 마지막 성채는 '우리가 왜 여기에 존재하는가'를 말하는 고유한 목소리다."
+                </p>
+              </article>
+
+              <article class="sample-card card">
+                <span class="sample-tag">UX Case Study · 사내 우수 사례</span>
+                <h4>취소 버튼 하나로 1억 원의 결제 이탈을 막은 마이크로카피의 비밀</h4>
+                <p class="sample-excerpt">
+                  "사용자는 악의를 가지고 서비스를 떠나지 않는다. 단지 길을 잃었거나 안심하지 못했을 뿐이다."
+                </p>
+              </article>
+
+              <article class="sample-card card">
+                <span class="sample-tag">Founder Interview · 공유 3,200회</span>
+                <h4>망하는 서비스를 3번 겪고도 다시 코드를 치는 사람들의 이유</h4>
+                <p class="sample-excerpt">
+                  "실패의 기록이 부끄러운 흉터가 아니라 다음 시도를 위한 지도이자 나침반이 되는 순간을 기록했다."
+                </p>
+              </article>
+
+              <article class="sample-card card">
+                <span class="sample-tag">Tech Blog Interview · 채용 지원율 +62%</span>
+                <h4>대규모 트래픽 장애를 겪은 새벽, 시니어 엔지니어들이 슬랙에서 나눈 말들</h4>
+                <p class="sample-excerpt">
+                  "책임을 묻기 전에 시스템의 빈틈을 먼저 메우는 팀의 품격은 위기 속에서 드러난다."
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Right: Bookshelf -->
+          <div class="bookshelf-column">
+            <h3 class="sub-heading">Editor's Influences & Bookshelf</h3>
+            <div class="book-cards">
+              <div class="book-card card">
+                <div class="book-title">《마이크로카피: UX 라이팅의 모든 것》</div>
+                <div class="book-author">키너렛 이프라 저</div>
+                <p class="book-comment">
+                  "글 한 줄이 어떻게 사용자 인터페이스의 미로를 걷어내는지 깨닫게 해 준 책. 모든 단어는 기능해야 함을 배웠습니다."
+                </p>
+              </div>
+
+              <div class="book-card card">
+                <div class="book-title">《생각의 탄생》</div>
+                <div class="book-author">로버트 루트번스타인 저</div>
+                <p class="book-comment">
+                  "서로 다른 분야의 점들을 연결해 새로운 맥락을 만들어내는 에디토리얼 기획력의 튼튼한 기초가 되었습니다."
+                </p>
+              </div>
+
+              <div class="book-card card">
+                <div class="book-title">《문장강화》</div>
+                <div class="book-author">이태준 저</div>
+                <p class="book-comment">
+                  "조선 최고의 문장가가 전하는 활자의 호흡. 화려한 기교보다 솔직하고 단단한 문장이 가진 힘을 일깨워 줍니다."
+                </p>
+              </div>
+
+              <div class="book-card card">
+                <div class="book-title">《인스파이어드 (INSPIRED)》</div>
+                <div class="book-author">마티 케이건 저</div>
+                <p class="book-comment">
+                  "에디터가 왜 PM의 언어를 이해해야 하고, 고객의 진짜 문제를 푸는 팀플레이어가 되어야 하는지 알려준 바이블."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 12: CONTACT & CTA -->
+    <section id="contact" class="section-padding contact-section">
+      <div class="container">
+        <div class="contact-card card text-center">
+          <div class="section-badge">LET'S CONNECT</div>
+          <h2 class="contact-title">문장 하나로 서비스의 첫인상을 바꾸고,<br>팀의 품격을 높일 준비가 되어 있습니다.</h2>
+          <p class="contact-desc">
+            저의 글과 일하는 방식이 귀사가 지향하는 비전 및 팀 문화와 닿아 있다면 편하게 대화를 건네주세요.<br class="desktop-br">
+            온라인 커피챗이든 대면 미팅이든, 만들고 싶은 미래에 대해 깊고 즐거운 이야기를 나누고 싶습니다.
+          </p>
+
+          <div class="contact-methods">
+            <button id="copy-email-bottom-btn" class="btn btn-primary btn-lg copy-email-btn" data-email="editor.kim@example-portfolio.com">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>editor.kim@example-portfolio.com (클릭하여 복사)</span>
+            </button>
+          </div>
+
+          <div class="social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" id="link-linkedin">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.95 0-1.72-.78-1.72-1.73s.77-1.73 1.72-1.73a1.73 1.73 0 0 1 1.73 1.73c0 .95-.78 1.73-1.73 1.73m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://figma.com" target="_blank" rel="noopener noreferrer" class="social-link" id="link-figma">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 2h8a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v2h4V4H8zm6 0h-2v4h4a2 2 0 0 0-2-2zm-6 6H6v2a2 2 0 0 0 2 2h2v-4zm6 0h-2v4h2a2 2 0 0 0 2-2v-2zm-6 6H6v2a2 2 0 0 0 2 2 2 2 0 0 0 2-2v-2z"/></svg>
+              Figma Portfolio
+            </a>
+            <a href="https://notion.so" target="_blank" rel="noopener noreferrer" class="social-link" id="link-notion">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H18a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6.5A2.5 2.5 0 0 1 4 19.5v-15zM6 5v14c0 .28.22.5.5.5H18V4H6.5c-.28 0-.5.22-.5.5z"/></svg>
+              Notion Archive
+            </a>
+          </div>
+
+          <div class="location-badge">
+            📍 Seoul, Republic of Korea · Available for Full-time / Hybrid / Remote
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">KIM EDITOR</span>
+        <p class="footer-copy">© 2026 Kim Editor. Crafted with precision for GitHub Pages.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top-btn" aria-label="맨 위로 이동">
+          맨 위로 가기 ↑
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span id="toast-message" class="toast-message">이메일 주소가 클립보드에 복사되었습니다!</span>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
