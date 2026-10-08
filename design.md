@@ -33,9 +33,10 @@
 
 ## 4. UI 컴포넌트 & 인터랙션 설계
 1. **Global Navigation Bar (GNB):**
-   - 상단 고정, 글래스모피즘 블러 처리
+   - 상단 고정, 사파이어 & 오션 블루 글래스모피즘 (`#0f2a5e` / `#1d4ed8`) 적용
    - 실시간 읽기 진행률 표시 바 (Scroll Progress Bar)
    - 섹션 바로가기 네비게이션 및 다크/라이트 테마 스위처
+   - 화이트 텍스트 및 스카이블루 액센트로 최적화된 시인성
    - 모바일 햄버거 메뉴 및 오버레이 드로어
 2. **Hero Section:**
    - 임팩트 있는 타이포그래피와 상태 뱃지 ("🟢 Currently exploring new challenges")
